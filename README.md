@@ -270,3 +270,4 @@ Expand-Archive .\elastic-agent-8.12.2-windows-x86_64.zip -DestinationPath .
 cd elastic-agent-8.12.2-windows-x86_64
 .\elastic-agent.exe install --url=https://<FLEETHOST>:8220 --insecure -f --enrollment-token=<api_key>
 ```
+sysctl -w vm.max_map_count=262144
